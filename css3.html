@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="D:/developpement_web/Mon_PortFolio/acceuil/index.css">
+    <link rel="stylesheet" type="text/css" href="D:/developpement_web/Mon_PortFolio/acceuil/index2.css">
+    <link rel="stylesheet" type="text/css" href="D:/developpement_web/Mon_PortFolio/acceuil/police.css">
+    <link rel="icon" sizes="3000*3000" href="D:/developpement_web/Mon_PortFolio/images/css3.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="D:\Developpement_web\Mon_PortFolio\css\text.css">
+    <link rel="stylesheet" href="D:/Developpement_web/Mon_PortFolio/acceuil/responsivité_phone.css" media="screen and (max-width : 1000px)">
+     <!-- <link rel="stylesheet" href="D:/Developpement_web/Mon_PortFolio/acceuil/responsivité_phone.css" media="screen and (max-width : 1000px)"> -->
+    <title>le CSS3</title>
+</head>
+<body class="body_responsive">
+    <header id="div_entete">
+        <div id="entête">
+            <div class="bloc_nav"><div class="formedesentete" > ACCEUIL</div> 
+                <ul class="nav">
+                    <li class="liens"><a href="D:/developpement_web/Mon_PortFolio/acceuil/index.html" class="couleur_liens">ACCEUIL</a></li>
+                </ul>
+            </div>
+            <div class="bloc_nav1"><div class="formedesentete">Développement Web</div>
+                <ul class="nav">
+                    <li class="liens"><a href="D:/developpement_web/Mon_PortFolio/comptence_web/html5.html" class="couleur_liens">HTML5</a></li>
+                    <li class="liens"><a href="D:/developpement_web/Mon_PortFolio/comptence_web/css3.html"  class="couleur_liens">CSS3</a></li>
+                    <li class="liens"><a href="D:/developpement_web/Mon_PortFolio/comptence_web/javascript.html"  class="couleur_liens">JAVASCRIPT</a></li>
+                    <li class="liens"><a href="D:/developpement_web/Mon_PortFolio/comptence_web/comprendre_web.html" class="couleur_liens" >COMPRENDRE LE WEB</a></li>
+                </ul>
+            </div>
+            <div class="bloc_nav2"><div class="formedesentete">Programmation</div>
+                <ul class="nav">
+                    <li class="liens"><a href=""  class="couleur_liens">PYTHON 3.X</a></li>
+                    <li class="liens"><a href="D:/developpement_web/Mon_PortFolio/programation/cpp.html"  class="couleur_liens">C ++</a></li>
+                </ul>
+            </div>
+            <div class="bloc_nav3"><div class="formedesentete">Logiciels</div>
+                <ul class="nav">
+                    <li class="liens"><a href="" class="couleur_liens">Linux et ses distributions</a></li>    
+                </ul>
+            </div>
+            <div class="bloc_nav4"><div class="formedesentete">Généralités</div>
+                <ul class="nav">
+                    <li class="liens"><a href="" class="couleur_liens" >Architecture des Ordinateurs</a></li>
+                    <li class="liens"><a href="" class="couleur_liens" >La technologie WIKI</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <h1 class="bloc_page">Le language CSS3</h1>
+    <article>
+        Avant toute chose je vous met le lien du cours sur <a href="https://openclassrooms.com/fr/courses/1603881/next-page-to-do" title="le lien d'openclasssrooms pur le c++" class="valeur">openclassroms</a>
+    </article>
+    <h3>LA MISE EN FORME EN CSS3 : </h3>
+    <article> 
+        Les selections en css tous ce qu'il y a de plus basique :<br>
+        <ul>
+            <li>Celle avec les class(.) et les id(#)</li>
+            <li>Celle avec le noms des balises et toutes les combinaisons possibles allant du choix de plusieurs balises en même temps au selecteur universel(*)</li> 
+        </ul>
+        Les premières propriétés css:
+        <ul>
+            <li><span class="valeur">font-family</span> : pour la police et la directrice @font-face pour le téléchargement de police. </li>
+            <li><span class="valeur">font-weight</span> : pour si le texte doit être en gras ou pas.Les valeurs possibles sont : 
+                <ul>
+                    <li><span class="valeur">normal</span>: le texte n'est pas mis en gras </li>
+                    <li><span class="valeur">bold</span>  : il est mis en gras </li>
+                    <li><span class="valeur">lighter</span>  : moins gras que la normal</li>
+                    <li><span class="valeur">bolder </span>: plus gras que la normal </li>
+                    <li><span class="valeur">200 , 900 </span>: des valeurs pour definir soit même la taille du gras</li>
+                    
+                </ul>
+             </li>
+            <li><span class="valeur">font-size</span>  : pour la taille de la police .Les valeurs possibles sont :
+                <ul>
+                    <li class="valeur">xx-small,x-small,small,large,x-large,xx-large .</li>
+                    <li class="valeur"> les valeurs absolues comme 0.2em , 1em ou autre  </li>
+                    <li class="valeur"> ou alors les valeurs en pixels comme 14px ou 20px </li>
+                </ul>
+            </li>
+            <li><span class="valeur">text-align</span> : pour la postion du texte a l'intérieur de son block;
+                <ul>
+                    <li class="valeur"> right </li>
+                    <li class="valeur"> left </li>
+                    <li class="valeur"> center </li>
+                </ul> 
+            </li>
+            <li><span class="valeur">text-decoration</span> : pour un élément sourligné,surligné ou même barré;Des possibilités comme :
+                <ul>
+                    <li class="valeur"> underline </li>
+                    <li class="valeur">overline</li>
+                    <li class="valeur"> none </li>
+                    <li class="valeur">line-through</li>
+                </ul>
+            </li>
+            <li><span class="valeur">text-transform</span> : pour transformer un texte de minuscule en majuscule ou inversement.
+                <ul>
+                    <li><span class="valeur">lowcase</span> : tout le texte sera en minuscle</li>
+                    <li><span class="valeur"> uppercase</span>: tout le texte sera en majuscule</li>
+                    <li><span class="valeur"> capitalize</span>: seul le premier caractère sera en majuscule </li>
+                    <li><span class="valeur">none</span> : rien ne sera fait </li>
+                </ul>
+            </li>
+            <li><span class="valeur">font-style</span>: qui définit si un texte est en italiqueou pas:
+                <ul>
+                    <li><span class="valeur">italic</span>: le texte est mis en italique </li>
+                    <li><span class="valeur">oblique</span>: le texte est un peu penché a la manière de l'italique mais pas ! </li>
+                    <li><span class="valeur">normal</span>: le texte reste intact </li>
+                </ul>
+            </li>
+            <li><span class="valeur">overflow </span>: lorsque le texte dépasse d'une boite on peut choisir soit de :
+                <ul>
+                    <li class="valeur">supprimer le texte qui dépasse avec : hidden</li>
+                    <li class="valeur">le rendre visible c'est à dire aggrandir le texte pour qu'on puisse le lire avec : visible</li>
+                    <li class="valeur"> Ajouter une barre de défilement avec : scroll ou auto</li>
+                    
+                </ul>
+            <li>
+                <span class="valeur">white-space</span> : il s'agit  de la gestion de l'allé à la ligne . A cet niveau j'ai vraiment envie de mettre un lien vers les W3docs car cette partie est vraiment waooh.Mais bon on y vas quand même!
+                le truc c'est que cette propriété cible les espaces ou les sauts a la ligne utilisés dans l'écriture du code de la page et applique un mise en forme selon les valeurs qui lui sont attribuées .En parlant de ces valeurs nous avons 
+                <li><span class="valeur">normal</span> : rien ne change dans la mise en page basique (c'est la valeur par défaut) le texte est afficé comme si de rien n'était et suivant les règles basiques  </li>
+                <li><span class="valeur">nowrap</span> : les sauts à la ligne sont d'abord pris en compte comme des sautes de lignes mais pas appliqués ! Oui c'est chelou dis commme ça mais le truc est comme si les sauts à la loigne était supprimés ; tout le texte ce retouve juste sur une même ligne</li>
+                <li><span class="valeur">pre</span> : comme le nom de la valeur semble l'indiquer les sauts à la ligne sont reconnus et appliqués selon la constitution du code comme dans une balise pre </li>
+                <li>
+                    <span class="valeur">pre-wrap</span>: là c'est un peu plus complexe avec cette propriété ;
+                     ! Ici il s'agit des ligne , on parle plus de retour à la ligne mais des espaces . Cette valeur conserve tout les espaces !
+                     c'est-à-dire si je met trois espaces en plein milieu ils seront affichés comme telles dans le code 
+                </li>
+                <li><span class="valeur">pre-line</span>: Les séquences d'espaces blancs s'effondrent en un seul espace blanc. Le texte sera renvoyé à la ligne si nécessaire et sur les sauts de ligne.</li>
+                <li><span class="valeur">break-word</span> : un peu la même chose que pre-wrap <a href="https://www.w3docs.com/learn-css/white-space.html" title="Oui trop la flemme je me renvoit vers le W3C quand besoin" class="valeur" style="text-decoration: none;">à cette différence près </a>  </li>
+                <li><span class="valeur">inherit et initial</span>: les même explications que pour la propriété overflow-wrap</li> 
+
+            </li>
+            <li>
+                <span class="valeur">overflow-wrap</span>: si overflow  gère le dépassemnet de texte hors de boite de manière verticale, overflow-wrap (de son ancien nom word-wrap avant css) le fait de manière verticale avec les valeur tels que :
+                <li><span class="valeur">normal </span>: rien n'est fait le texte dépasse </li>
+                <li><span class="valeur">break-word</span>: le texte est coupé pour qu'il puisse rester dans sa boite </li>
+                <li><span class="valeur">initial</span>: Oblige la propriété à utiliser sa valeur par défaut(normal)</li>
+                <li><span class="valeur">inherit</span>	Hérite la propriété de son élément parent</li>
+                Elle n'a d'effet que lorsque la propriété white-space autorise l'habillage.
+            </li>
+            <li>Pour la suite parcequ'il y a une suite trop la flemme 😑😐😖! Voici un lien vers  <a href="D:/Développement web/Cours_Web_Design_ENEAM/CSS_cours_partie2.pdf" class="valeur">le reste</a></li>
+            
+        </ul>
+    </article>
+    <h3>FLEX BOX ET LES AUTRES TECHNIQUES DE MISE EN FORME </h3>
+    <article>
+        
+        Avec Flex-Box tout est simple ! On considère un boite avec des tiroirs dedans et on décide de comment agencer ces tiroirs là selon la disposition que l'on désire <br>
+        c'est simple les bloces sont à l'intérieur et on leur attribut des dimensions donnés. on utilse <em>dispaly:flex;</em> au conteneur et on ajoute les propriétés de positionnement qu'on souhaite.<br>
+        On as donc:
+        <ul>
+            <li><span class="valeur">flex direction: </span> pour définir l'alignemet des element du conteneur avec les valeurs 
+                <ul>
+                    <li><span class="valeur">row : </span> les elemnts sont disposés en ligne </li>
+                    <li><span class="valeur">column :</span> les elemnts sont disposés en colonnes </li>
+                    <li><span class="valeur">row-reverse : </span> les elements sont disposés en ligne mais renversé au niveau de l'ordre</li>
+                    <li><span class="valeur">column-reverse :</span> même état d'esprit que row-reverse</li>
+                </ul>
+            </li>
+        </ul>
+        il est juste de notifier que par défaurt les élements du conteneur occupent l'espace exacte de leur dimensions en étant collés les un aux autres .Et si la dimension totale des elements du 
+        conteneurs dépassent celles de cette dernière on utilse la propriété <em class="valeur">flex-wrap:wrap or nowrap</em>pour obloger un retour a ligne de ces éléments .<br>
+        L'ALIGNEMENT DES ELEMENTS :<br>
+        Quand on definit la direction des elements cette direction devient l'axe principale et l'autre l'axe secondaire A notifier que par défaut les élements dans la flex-box sont alignés en ligne .<br>
+        Donc pour un algnement par rapport a l'axe principale on utilse <em class="valeur">justify-content </em> avec les valeurs :
+        <ul>
+            <li><em class="valeur">flex-star :</em> alignés au début (valeur par défaut)</li>
+            <li><em class="valeur">flex-end :</em> alignés a la fin</li>
+            <li><em class="valeur">center </em> centrés </li>
+            <li><em class="valeur">space-between : </em> éléments étirés sur tout l'axe avec des espaces entre eux </li>
+            <li><em class="valeur">space-around : </em> idem pour space-between mais avec des espaces autour des extremités également </li>
+        </ul>
+        Pour l'alignement par rapport a l'axe secondaire on utilise la propriété <em>align-items</em> avec les attributs :
+        <ul>
+            <li><em class="valeur">flex-start :</em> alignés au début (valeur par défaut)</li>
+            <li><em class="valeur">flex-end :</em> alignés a la fin</li>
+            <li><em class="valeur">center </em> centrés </li>
+            <li><em class="valeur">stretch : </em> éléments étirés sur tout l'axe avec des espaces entre eux </li>
+            <li><em class="valeur">sbaseline: </em> alignés sur la ligne de base  </li>
+        </ul> 
+        Pour aligner un seul element sur l'axe secondaire on lui applique  <em class="valeur"> align-self </em> avec toutes les propriétés de <em class="valeur">align-self</em>
+        <h4>BON IL EST TEMPS DE PARLER DES AUTRES TECHNIQUES DE MISES EN FORMES </h4>
+        <ul>
+            <li>LE POSITIONNEMENT ABSOLU : <br>
+                il permet de positionner un bloc par rapport au coin supérieur gauche de l'ecran ; pour ce faire on utilse la propriété <em class="valeur">position : absolute;</em> suivi des propriétés :
+                <ul>
+                    <li><em class="valeur">top</em></li>
+                    <li><em class="valeur">right</em></li>
+                    <li><em class="valeur">bottom</em></li>
+                    <li><em class="valeur">top</em></li>
+                </ul>
+                Les valeurs des ces propriétés peuvent être en <em class="valeur">pixels</em> ou en <em class="valeur">pourcentage</em> !! 
+                Avec une telle méthode les blocs risquent de se superposer pour cela la propriété <em class="valeur">z-index</em> intervient avec pour valeur un chiffre ! L'élément avec l'index le plus grand est affiché par 
+                dessus l'autre.
+
+            </li>
+            <li>LE POSITIONNEMENT FIXE : <br>
+                Il est pareil que le positionnement absolue jusque que l'élément sera fixé sur la page quelque soit les déplacement qui sont opérés.<br>
+                Un peu comme  les images fixés avec <em class="valeur">background-attachement : fixed; </em>.Là aussi la propriété <em class="valeur">z-index</em> peut être utilisé .
+                Pour l'utilser on aura le code suivant <em class="valeur">position : fixed;</em>
+            </li>
+            <li>LE POSITIONNEMENT RELATIF :<br>
+                Il permet de positionner un element par rapport à sa position initiale sur la page  avec les mêmes propriétés que le positionnement absolues !
+            </li>
+        </ul>
+        <li>QUELQUES PETITS CONSEILS POUR LES POSITIONNEMENT ET LES MARGES : <br>
+            les marges et flex box ne font pas bon ménages c'est à dire que lorsqu'on fait intervenir flex-box pour un mise en pag il faudrait evitez de vouloir le parfaire avec les marges . Flex box à lui tout seul est très complet! <br>
+            ON peut mélanger pourcentages et px 
+
+        </li>
+
+    </article>
+    <h3>LA RESPONSIVITE AVEC LES MEDIA QUERIS</h3>
+    <article>
+        <h4>LA RESPONSIVITE QU'EST-CE C'EST ?</h4>
+        <p>C'est le fait de faire en sorte grâce au CSS que le design de sont site internet soit adapté à toute les tailles d'écran ! Vous me demanderez comment faire et bien nous y reviendrons (petit spoiler avec la directive @media queries) 
+        </p>
+        <h4>COMMENT L'UTILISER ?</h4>
+        <p>
+            Eh bien il y deux façon de le faire 🙂🙂 <br>
+            <ul>
+                <li>
+                    La premiere façon consiste à faire un créer un fichier css entier et unique qui sera utilsé automatiquement par la page seulement dans le cas où la résolution mentionné est respecté !<br>
+                    Bien sur vous vous en doutez pour faire appel au tag &lt; link &gt; ; mais cette fois çi avec une nouvelle particularité 😏 l'attribut <em class="valeur"> media </em>
+                </li>
+            </ul>
+                    <pre class="pre pre_dimensions"> 
+                    <code>
+ &lt;link 
+ rel="stylesheet" 
+ media="screen and (max-width: 1280px)" 
+ href="petite_reso.css" /&gt;
+                    </code>
+                </pre>
+            <ul>
+                <li> 
+                    La seconde façon de faire est d'ecrire le code css qui gère la respnsivité du site dans le même fichier que le code css de base avec la directive <em class="media">@media</em>
+                    et bien sur il faut rajouter les conditions sur l'ecran qui justifient l'utilisation de ce code ! En gros on obtient truc dans le genre :
+                </li>
+            </ul>
+                    <pre class="pre pre_bord">
+                    <code>
+    @media screen and (max-width: 1280px)<br>                  
+    {<br>
+        <span class="alinea">/* Rédigez vos propriétés CSS ici */</span><br>
+    }
+                    </code>
+                    </pre>
+                
+                
+            
+        </p>
+        <h4>PARLONS DONC DES REGLES </h4>
+        <p>Dans le code précédent on as parlé de <em class="valeur">screen and (max-width: 1280px) </em>! <em class="valeur"> screen et max-width </em> sont des règles : 
+            en gros c'est comme les mots clés qui permettent de définir les conditions de la responsivité ! Voici les principaux :
+            <ul>
+                <li><em class="valeur">color </em> : gestion de la couleur (en bits/pixel) ;</li>
+                <li><em class="valeur">height</em>  : hauteur de la zone d'affichage (fenêtre) ;</li>
+                <li><em class="valeur">width </em> : largeur de la zone d'affichage (fenêtre) ; </li>
+                <li><em class="valeur">device-height</em>  : hauteur du périphérique </li>
+                <li><em class="valeur">device-width</em>  : largeur du périphérique ;</li>
+                <li><em class="valeur">orientation</em>  : orientation du périphérique (portrait ou paysage) </li>
+                <li>
+                    <em class="valeur">media</em>  : type d'écran de sortie. Quelques-unes des valeurs possibles 
+                    <ul>
+                        <li><em class="valeur">screen</em>  : écran « classique »,</li>
+                        <li><em class="valeur">handheld </em> : périphérique mobile,</li>
+                        <li><em class="valeur">print </em> : impression,</li>
+                        <li><em class="valeur">tv </em> : télévision,</li>
+                        <li><em class="valeur">projection</em>  : projecteur</li>
+                        <li><em class="valeur">all</em>  : tous les types d'écrans</li>
+                    </ul>
+                </li>
+            </ul>
+            le truc avec la responsivité c'est qu'il faut voir les cas possibles d'utilisation du site et  faire la responsiité en fonction de chaque  <br>
+            Il ne faut surtout pas oublier les règles peuvent être combinées à l'aide des mots suivants :
+            <ul>
+                <li><em class="valeur">only</em>: « uniquement » </li>
+                <li><em class="valeur">and</em>  : « et » ;</li>
+                <li><em class="valeur">not</em>  : « non ».</li>
+            </ul>
+        </p>
+        <p>
+            Un exemple de media queries : 
+            <div>
+            <pre class="pre">
+                <code>
+    /* Sur les écrans, quand la largeur 
+    de la fenêtre fait au maximum 1280px */<br><br>
+    @media screen and (max-width: 1280px)<br>
+    /* Sur tous types d'écran, quand la
+    largeur de la fenêtre est comprise
+     entre 1024px et 1280px */<br><br>
+    @media all and (min-width: 1024px)
+     and (max-width: 1280px)<br><br>
+    /* Sur les téléviseurs */
+       @media tv<br><br>
+    /* Sur tous types d'écrans orientés
+     verticalement */<br>
+    @media all ad (orientation: portrait)<br>
+                </code>
+            </pre>
+            </div>
+        </p>
+        <h4>LA RESPONSIVITE ET LES NAVIGATEURS MOBILES </h4>
+        <p>
+             En gros a ce niveau il faudras retenir que les navigateur de téléphones ont une manière un peu complexe de voir les choses !
+             c'est a dire que le navigateur ne prend pas comme largeur la largeur du periphérique mais celle obtenu avec le <em class="valeur">viewport</em>.
+             Du coup on peut adapter la responsivité pas à la taille du périphérique maisà la taille du viewport . Cette largeur varie en fonction de chaque plateforme ! et chaque navigateur .
+             800px pour les <em class="valeur">android</em> et 900px pour les <em class="valeur">iphones</em>. 
+             Vous pouvez modifier la largeur viewport du navigateur mobile avec une balise meta  à insérer dans l'en-tête ( <head>  ) du document :
+            <pre class="pre" >
+            <code>
+    &lt;meta name="viewport" content="width=320" / &gt;
+            </code>
+            </pre>
+             Vous pouvez utiliser cette balise pour modifier la façon dont le contenu de votre page s'organise sur les mobiles. 
+             Pour obtenir un rendu facile à lire, sans zoom, vous pouvez demander à ce que le viewport soit le même que la largeur de l'écran :
+            <pre class="pre"  >
+            <code>
+    &lt;meta name="viewport" content="width=device-width"  /&gt;
+            </code>
+        </pre>
+            
+        </p>
+    </article>
+    <div class="link_daily_search">
+        <a href="https://w3tutoriels.com/" title="le site du W3C pour html et css " class="valeur" target="_blank"> recherches quotidiennes sur le site du W3C</a>  <br>
+        <a href="https://www.geeksforgeeks.org/" title="un lien vers les recherches pour les recherches en générales" class="valeur" target="_blank"> recherches quotidiennes sur le site geeksforgeeks</a> 
+    </div>
+    <footer >
+        <div id="footer">
+            <!-- <img src="images/logo-facebook-png-blanc.png" width="40" height="40">
+            
+            <img src="images/whatsapp (1).png"  width="40" height="40">
+            <img src="images/twiter_trans.png"  width="40" height="40">
+            <img src="images/instagram.png"  width="40" height="40">
+            https://www.facebook.com/ortniel.adoumasse
+            https://www.instagram.com/donaortniel
+            ajouter les cms et les framewok du css au compétence web
+            ajouter aussi si possibles les liens des fichiers de site experimentaux ,
+            la technologie wiki ira plus en possibilités avec le site de ninho
+            
+            -->
+            <div class="foter1">
+                <h1 class="footera1"> CONTACT US</h1>
+                <div class="footera2"> 
+                    <div class="div_icon"><a href=" https://www.facebook.com/ortniel.adoumasse" target="_blank"><i class="fa-brands fa-facebook icon" ></i></a></div>
+                    <div class="div_icon"><a href="https://www.instagram.com/donaortniel" target="_blank"><i class="fa-brands fa-instagram icon" ></i></a></div>
+                </div>
+                <div class="footera3"><a href=" mailto :adoumasseortniel@gmail.com" class="couleur_liens couleur_footera3" >adoumasseortniel@gmail.com</a></div>
+            </div>
+            
+            <div class="foter3">
+                <h1 id="titre3">GET IN TOUCH</h1>
+                    <form method="post" action="traitement.php" >
+                        <div id="form">
+                            <p>
+                                <div><input type="text" placeholder="name" name="nom" class="form1"> </div>
+                                <div><input type="text" placeholder="mail" name="email" class="form1"></div>
+                            </p>
+                        </div>
+                        
+                    </form>
+                    <form action="traitement.php" method="post">
+                        <p id="form_zone">
+                            
+                        <textarea name="message" id="mess" >message</textarea>
+                        
+                        </p>
+                    </form>
+                    <div class="send">Send</div>
+                    <div class="margin_top_send"></div>
+                </div>
+                
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
